@@ -18,6 +18,12 @@
 .details{
     width:300px;
 }
+.details h3{
+    margin-bottom: 20px;
+}
+.details p{
+    margin-bottom: 20px;
+}
 button{
     width:100px;
     height:40px;
