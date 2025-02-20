@@ -20,7 +20,7 @@ export default function Home({ data=[], addToCart=()=>{}}) {
     <div className="container">
       {Products.map((product)=>{
         return(
-            <Product key={product.id} product={product} addToCart={addToCart}  disabled={isAddedToCart(data,product)} />
+            <Product key={product.id} product={product} addToCart={addToCart} disabled={isAddedToCart(data,product)}  />
         )
       })}   
 </div>

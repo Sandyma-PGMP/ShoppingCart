@@ -17,8 +17,7 @@ function App() {
       setCart((prev) => [...prev, { ...data, quantity: 1 }]);
     }
   }
-  function handleRemoveFromCart(e, data = {}) {
-    e.stopPropagation();
+  function handleRemoveFromCart(data = {}) {
     if (data) {
       setCart(Cart.filter((item)=>item.id!==data.id));
     }
@@ -60,8 +59,8 @@ function App() {
       <Header length={Cart.length}/>
       <div className="container">
         <Routes>
-          <Route path="/" element={<Home data={Cart} addToCart={handleAddToCart} removefromcart={handleRemoveFromCart}/>}/>
-          <Route path="/cart" element={<CartFunc data={Cart} quantityChange={handleCartQuantity} Total={cartTotal}/>}/>
+          <Route path="/" element={<Home data={Cart} addToCart={handleAddToCart} />}/>
+          <Route path="/cart" element={<CartFunc data={Cart} quantityChange={handleCartQuantity} Total={cartTotal} removefromcart={handleRemoveFromCart}/>}/>
         </Routes>
       </div>
       </BrowserRouter>

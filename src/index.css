@@ -6,12 +6,13 @@ html {
     font-family: "Bebas Neue", serif;
   }
   
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
+
   p {
     margin: 0px;
+    font-size: medium;
+    
+  }
+  h3{
+    font-size: large;
+    font-weight:800;
   }

@@ -1,10 +1,11 @@
 .product{
-    width:500px;
-    height:200px;
+    width:320px;
+    height:220px;
     border:2px solid #dd6934;
     display:flex;
     gap:10px;
     background-color:rgb(219, 175, 143);
+    padding: 10px 10px;
 }
 .product .img{
     width:200px;
@@ -30,6 +31,9 @@ button{
     background-color:teal;
     color: white;
     border: #0e0e0e;
+}
+.btn-remove{
+    background-color:brown;
 }
 
 .details p{
