@@ -1,0 +1,32 @@
+.product{
+    width:500px;
+    height:200px;
+    border:2px solid #dd6934;
+    display:flex;
+    gap:10px;
+    background-color:rgb(219, 175, 143);
+}
+.product .img{
+    width:200px;
+    height:200px;
+}
+.product .img img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.details{
+    width:300px;
+}
+button{
+    width:100px;
+    height:40px;
+    background-color:teal;
+    color: white;
+    border: #0e0e0e;
+}
+
+.details p{
+    font-size: 18px;
+    font-weight: 500;
+}
